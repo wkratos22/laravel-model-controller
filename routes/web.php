@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'MovieController@index');
+
+// Route::get('/', function () {
+
+//     $movies = config('movies');
+//     dump($movies);
+
+//     return view('index' compact('movies'));
+// });
